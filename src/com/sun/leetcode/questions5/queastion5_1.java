@@ -4,7 +4,7 @@ public class queastion5_1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.print(longestPalindrome("abcda"));
+		System.out.print(longestPalindrome("cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"));
 	}
 
 	public static String longestPalindrome(String s) {
@@ -31,7 +31,6 @@ public class queastion5_1 {
 				if(s.charAt(i)==s.charAt(j) && map[i+1][j-1]==1) {
 					map[i][j]=1;
 					longestStr = s.substring(i,j+1);
-					maxlen=l;
 				}
 			}
 		}
